@@ -1,0 +1,12 @@
+.input
+  width: 339px
+  #{$text-inputs}
+    width: 100%
+    background-color: transparent
+    border-bottom: 2px solid $black
+    height: 30px
+    +tr(border-color .3s)
+    +placeholder
+      color: inherit
+    &:focus
+      border-color: $accent

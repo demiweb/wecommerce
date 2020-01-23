@@ -1,0 +1,72 @@
+{%set
+form = {
+  fields: [
+    {
+      name: 'input',
+      mod: '',
+      placeholder: '*שם מלא',
+      type: 'text'
+    },
+    {
+      name: 'input',
+      mod: '',
+      placeholder: '*טלפון',
+      type: 'text'
+    },
+    {
+      name: 'input',
+      mod: '',
+      placeholder: '*מייל',
+      type: 'text'
+    },
+    {
+      name: 'input',
+      mod: '',
+      placeholder: 'שם העסק',
+      type: 'text'
+    }
+  ]
+}
+%}
+
+<!-- begin section -->
+<section class="section section--bg s-form js-lazy" data-background-image="./img/home/shutterstock_635478044.png">
+  <div class="container">
+    <form class="s-form__form form">
+      <div class="form__upttl">
+        <p>יש לכם חנות וירטואלית ואתם לא מצליחים להרוויח ממנה?</p>
+        <p> אתם רוצים להקים חנות וירטואלית אבל חוששים מתהליך ההקמה ומהתפעול השוטף?</p>
+      </div>
+
+      <h2 class="form__title title title--h2">יש פיתרון!</h2>
+
+      <div class="form__subttl">השאירו פרטים ונחזור אליכם בהקדם</div>
+
+      <div class="form__fields">
+        {% for i in form.fields %}
+        <div class="form__field">
+          {{ mixins.input(
+            name = i.name,
+            mod = i.mod,
+            type = i.type,
+            placeholder = i.placeholder,
+            value = '',
+            fieldClass = ''
+          ) }}
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="form__btn">
+        {{ mixins.btn(
+          title = 'צור קשר',
+          mod = '',
+          href = false
+        ) }}
+      </div>
+
+      <div class="form__code">או התקשרו 03-9444901</div>
+    </form>
+  </div>
+</section>
+<!-- end section -->

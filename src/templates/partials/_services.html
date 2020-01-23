@@ -1,0 +1,17 @@
+<!-- begin services -->
+<div class="services">
+  {% for i in services.items %}
+  <div class="services__item">
+    <!-- begin service-card -->
+    <div class="service-card">
+      <div class="service-card__img service-img">
+        <img class="js-lazy" alt="" src="about:blank" data-src="./img/{{ i.img }}"/>
+      </div>
+
+      <div class="service-card__title">{{ i.title | safe }}</div>
+    </div>
+    <!-- end service-card -->
+  </div>
+  {% endfor %}
+</div>
+<!-- end services -->

@@ -1,0 +1,29 @@
+.services
+  $grid-gutter: 114px
+
+  +flex(flex-start, normal, row, wrap)
+  margin-left: -$grid-gutter / 2
+  margin-right: -$grid-gutter / 2
+  &__item
+    width: 20%
+    padding-left: $grid-gutter / 2
+    padding-right: $grid-gutter / 2
+
+.service-card
+  padding: 39px 23px 23px
+  background-color: $white
+  +flex(flex-start, normal, column)
+  +shadow
+  height: calc(100% - 16px)
+  margin-bottom: 16px
+  text-align: center
+  &__img
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 20px
+
+.service-img
+  width: 97px
+  padding-bottom: 50px
+  border-bottom: 1px solid  $blue
+

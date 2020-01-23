@@ -1,0 +1,30 @@
+.header
+  background-color: $white
+  box-shadow: 0px 3px 6px $c-light
+  position: fixed
+  z-index: 10
+  top: 0
+  left: 0
+  right: 0
+  &__logo
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    img
+      position: relative
+      &.lazy--loaded
+        margin-top: -1.5em
+  &__inner
+    +flex(flex-start, center)
+    height: $header-height
+    position: relative
+  &__nav
+    width: 100%
+  &__lang
+    position: absolute
+    z-index: 1
+    left: 100%
+    top: 50%
+    transform: translate(0, -50%)
+    font-weight: 700

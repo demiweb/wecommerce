@@ -1,0 +1,38 @@
+{%set
+services = {
+  items: [
+    {
+      img: 'home/icon1@2x.png',
+      title: 'הקמת ותחזוקת קטלוג מוצרים'
+    },
+    {
+      img: 'home/icon2@2x.png',
+      title: 'שירות לקוחות לאתרי סחר'
+    },
+    {
+      img: 'home/icon3@2x.png',
+      title: 'ניהול מערך השילוח'
+    },
+    {
+      img: 'home/icon4@2x.png',
+      title: 'Marketing Automation ו-SEO'
+    },
+    {
+      img: 'home/icon_amazon@2x.png',
+      title: 'ניהול חנויות אמזון'
+    }
+  ]
+}
+%}
+
+<!-- begin section -->
+<section class="section s-services">
+  <div class="container container--lg">
+    <h2 class="section__title title title--h2">מתמחה בתפעול ושיווק אתרי איקומרס</h2>
+
+    <div class="section__subttl">אנחנו מספקים מעטפת תפעולית ושיווקית מלאה שתהפוך את החנות הוירטואלית שלכם להצלחה, תחסוך לכם זמן והתעסקות מיותרת ותייצר עבורכם הרבה יותר כסף</div>
+
+    {% include "partials/_services.html" %}
+  </div>
+</section>
+<!-- end section -->
