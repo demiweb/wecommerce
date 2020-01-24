@@ -2,24 +2,49 @@
   background-color: $white
   padding: 54px 86px 36px
   text-align: center
+  +lg
+    padding: 40px 50px 25px
+  +md
+    padding: 30px 45px 18px
+  +sm
+    padding: 23px 38px 13px
   &__upttl
     margin-bottom: 20px
+    +sm
+      display: none
   &__title
     margin-bottom: 22px
+    +sm
+      display: none
   &__subttl
     font-weight: 700
     margin-bottom: 35px
+    +md
+      margin-bottom: 25px
+    +sm
+      margin-bottom: 15px
   &__fields
     +flex(flex-start, normal, row, wrap)
     margin-left: -10px
     margin-right: -10px
     margin-bottom: -67px + 37px
+    +md
+      margin-bottom: 0
   &__field
     width: 50%
     margin-bottom: 67px
     padding-left: 10px
     padding-right: 10px
+    +md
+      margin-bottom: 40px
+    +sm
+      width: 100%
+      margin-bottom: 25px
   &__btn
     margin-bottom: 22px
+    +md
+      margin-bottom: 15px
+    +sm
+      margin-bottom: 7px
   &__code
     font-weight: 700
