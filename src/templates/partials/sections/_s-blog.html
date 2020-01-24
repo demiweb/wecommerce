@@ -1,0 +1,71 @@
+<!-- begin section -->
+<section class="section s-blog">
+  <div class="container container--xl">
+    <div class="section__side-wrap">
+      <div class="section__side-content">
+        {% for i in range(0, 4) %}      
+        
+          <div class="section__post post">
+            <h2 class="post__title title title--h2">title</h2>
+
+            <div class="post__meta post-meta">
+              <div class="post-meta__item">
+                {{ mixins.icon('user') }}
+                user
+              </div>
+
+              <div class="post-meta__item">
+                {{ mixins.icon('calendar') }}
+                06.2019
+              </div>
+
+              <div class="post-meta__item">
+                {{ mixins.icon('label') }}
+                label
+              </div>
+
+              <div class="post-meta__item">
+                {{ mixins.icon('speech-bubble') }}
+                message
+              </div>
+            </div>
+
+            <div class="post__img js-lazy" data-background-image="./img/home/Screen Shot 2020-01-15 at 11.34.40.png"></div>
+
+            <div class="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut ad consequuntur eaque, nemo quidem dolor dicta! Possimus temporibus sequi ab iusto, dignissimos quas sunt laborum, ex natus, architecto laudantium!</div>
+
+          </div>
+        {% endfor %}
+      </div>
+      
+      <div class="section__side-aside">
+        <aside class="section__aside aside">
+          <div class="aside__block aside-nav">
+            <div class="aside-nav__title">קטגוריות</div>
+
+            {{ mixins.list(
+              name = 'aside-nav__nav',
+              modifications = { wrap: '', item: '', link: '' },
+              list = [
+                { link: 'כל הקטגוריות' },
+                { link: 'שיווק' },
+                { link: 'תפעול ולוגיסטיקה' },
+                { link: 'השירותים שלנו' }
+              ]
+            ) }}
+          </div>
+
+          <div class="aside__block">
+            <img class="js-lazy" src="about:bland" alt="" width="100%" data-src="./img/צילום מסך 2020.01.22 ב.11.01.50.png">
+          </div>
+
+          {{ mixins.btn(
+            title = 'צור קשר',
+            mod = 'btn--full btn--lg'
+          ) }}
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->

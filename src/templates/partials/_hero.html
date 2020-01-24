@@ -1,5 +1,6 @@
 <!-- begin hero -->
-<section class="hero js-lazy" data-background-image="./img/home/Screen Shot 2020-01-15 at 11.34.40.png">
+<section class="hero js-lazy" data-background-image="./img/{{ hero.bg }}">
+  {% if not hero.sm %}
   <div class="container">
     <div class="hero__inner">
       <h1 class="hero__title title title--h1">טקסט כלשהו</h1>
@@ -11,6 +12,7 @@
         ) }}
       </div>
     </div>
-  </div>  
+  </div>
+  {% endif %}
 </section>
 <!-- end hero -->

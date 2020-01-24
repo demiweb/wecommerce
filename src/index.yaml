@@ -2,3 +2,9 @@ ProjectTitle: wecommerce
 
 PageList:
 - file: home.html
+- file: catalog.html
+- file: shirut.html
+- file: shiluah.html
+- file: marketing.html
+- file: amazon.html
+- file: blog.html

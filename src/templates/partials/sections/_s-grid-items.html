@@ -1,0 +1,66 @@
+{%set
+items = [
+  {
+    text: '<strong>81% מהצרכנים </strong>עושים מחקר אונליין לפני שהם קונים אונליין או אופליין'
+  },
+  {
+    text: 'הצרכן הממוצע מבקר ב<strong>לפחות 3 אתרים </strong>לפני שהוא מחליט באיזה אתר לקנות'
+  },
+  {
+    text: 'רכישות דרך המובייל מהוות כ<strong>בר כ-40%</strong> מכלל הרכישות אונליין'
+  },
+  {
+    text: '<strong>33%</strong> מהרכישות אונליין מתרחשות אחרי השעה 18:00'
+  },
+  {
+    text: '<strong>85% מהצרכנים מ</strong>גדירים ״משלוח חינם״ כהטבה החשובה ביותר עבורם'
+  },
+  {
+    text: 'קבוצת הגיל שקונה הכי הרבה אונליין היא <strong>18-34</strong>'
+  },
+  {
+    text: '<strong>89% מהצרכנים </strong>הפסיקו לקנות בחנות אונליין בעקבות חוויה שלילית של שירות לקוחות'
+  },
+  {
+    text: '<strong>88% מהקונים </strong>מגדירים תוכן מוצר מפורט כחשוב מאוד'
+  },
+  {
+    text: 'ביום ממוצע רוכשים הישראלים באמזון בסכום של כ1.2 מיליון שקל, בשנה עומד הסכום המוערך בחצי מיליארד שקל.'
+  },
+  {
+    text: 'בפריים דיי (יום המכירות של אמזון בדומה לבלאק פרידיי) קנו הישראלים בסכום המוערך בכ-9 מיליון שקל, בעולם כולו עומד הסכום 175 מיליון דולר.'
+  },
+  {
+    text: 'מתוך 10 לקוחות נכנסים לאמזון לבדוק מחירים לפני שהם מחליטים איפה לקנות'
+  },
+  {
+    text: 'ביום ההשקה של אמזון בישראל היו 8,700 מוצרים שנרשמו לתוכנית local delivery. היום יש כ-25 אלף מוצרים, 350 מוצרים נוספים ביום'
+  }
+]
+%}
+
+<!-- begin section -->
+<section class="section s-grid-items">
+  <div class="container container--lg">
+
+    <!-- begin descr-items -->
+    <div class="descr-items">
+      {% for i in items %}
+      <div class="descr-items__item">
+        <!-- begin descr-item -->
+        <div class="descr-item">
+          {{ i.text | safe }}
+        </div>
+        <!-- end descr-item -->
+      </div>
+      {% endfor %}
+    </div>
+    <!-- end descr-items -->
+
+    <div class="s-grid-items__img">
+      <div class="s-grid-items__title title title--h2">הידעת?</div>
+      <img class="js-lazy" alt="" src="about:blank" data-src="./img/home/Image 1.png"/>
+    </div>
+  </div>
+</section>
+<!-- end section -->
