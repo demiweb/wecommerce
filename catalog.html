@@ -16,11 +16,11 @@
       <header class="header">
         <div class="container container--lg">
           <div class="header__inner">
-            <div class="header__nav-wrap">
+            <div class="header__nav-wrap js-menu">
               <!-- begin nav -->
               <nav class="nav header__nav">
                 <ul>
-                  <li><a href="#">הסיפור שלנו</a></li>
+                  <li class=" nav__item-current"><a href="#">הסיפור שלנו</a></li>
                   <li><a href="#">השירותים שלנו</a></li>
                   <li><a href="#">הידעת</a></li>
                   <li><a href="#">בלוג</a></li>
@@ -30,7 +30,7 @@
               <!-- end nav -->
               <a href="#" class="header__lang">Eng</a>
             </div>
-            <button class="header__burger burger"><span></span></button>
+            <button class="header__burger burger js-burger"><span></span></button>
           </div>
         </div>
         <a href="/" class="header__logo">
@@ -47,7 +47,7 @@
         <!-- begin section -->
         <section class="section section--icon">
           <div class="section__right-icon-wrap">
-            <div class="section__right-icon service-img">
+            <div class="section__right-icon service-img service-img--side">
               <img class="js-lazy" alt="" src="about:blank" data-src="./img/home/icon2@2x.png" />
             </div>
           </div>
@@ -101,7 +101,7 @@
               </div>
             </form>
             <!-- begin services -->
-            <div class="services">
+            <div class="services services--full">
               <div class="services__item">
                 <!-- begin service-card -->
                 <div class="service-card">
