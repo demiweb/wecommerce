@@ -1,5 +1,5 @@
 <!-- begin services -->
-<div class="services">
+<div class="services{% if services.mod %} {{ services.mod }}{% endif %}">
   {% for i in services.items %}
   <div class="services__item">
     <!-- begin service-card -->

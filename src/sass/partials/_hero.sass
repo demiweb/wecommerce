@@ -1,23 +1,36 @@
 .hero
+  $this: &
   +cover
   background-color: $c-light
-  text-align: center
-  min-height: 259px
-  &__inner
-    padding-top: 300px
-    padding-bottom: 148px
+  text-align: center  
+  &:not(#{$this}--lg)
+    min-height: 259px
     +xl
-      padding-top: 250px
-      padding-bottom: 110px
+      min-height: 180px
     +lg
-      padding-top: 200px
-      padding-bottom: 80px
+      min-height: 110px
     +md
-      padding-top: 150px
-      padding-bottom: 60px
+      min-height: 90px
     +sm
-      padding-top: 93px
-      padding-bottom: 51px
+      min-height: 73px
+  &__inner
+    +flex(center, normal, column)
+    padding-top: 30px
+    padding-bottom: 30px
+    // padding-top: 300px
+    // padding-bottom: 148px
+    // +xl
+    //   padding-top: 250px
+    //   padding-bottom: 110px
+    // +lg
+    //   padding-top: 200px
+    //   padding-bottom: 80px
+    // +md
+    //   padding-top: 150px
+    //   padding-bottom: 60px
+    // +sm
+    //   padding-top: 93px
+    //   padding-bottom: 51px
   &__title
     margin-bottom: 118px
     +xl
@@ -28,3 +41,11 @@
       margin-bottom: 55px
     +sm
       margin-bottom: 43px
+
+  &--lg
+    #{$this}__inner
+      min-height: 40vh
+      // +windowMinHeight($header-height)
+      // +lg
+      //   +windowMinHeight($header-height-lg)
+

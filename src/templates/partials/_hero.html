@@ -1,5 +1,5 @@
 <!-- begin hero -->
-<section class="hero js-lazy" data-background-image="./img/{{ hero.bg }}">
+<section class="hero js-lazy{% if hero.mod %} {{ hero.mod }}{% endif %}" data-background-image="./img/{{ hero.bg }}">
   {% if not hero.sm %}
   <div class="container">
     <div class="hero__inner">

@@ -50,18 +50,50 @@
     padding-top: 80px
     padding-bottom: 80px
     position: relative
+    +xl
+      padding-top: 60px
+      padding-bottom: 60px
+      min-height: 800px
+    +lg
+      padding-top: 50px
+      padding-bottom: 50px
+      min-height: 600px
+    +md
+      padding-top: 40px
+      padding-bottom: 40px
+      min-height: 400px
+    +sm
+      padding-top: 27px
+      padding-bottom: 38px
     #{$this}__title
-      text-align: right
+      padding-left: 60px
+      padding-right: 60px
+      +mdmin
+        text-align: right
+        padding-left: 0
+        padding-right: 0
+      +md
+        margin-bottom: 30px
     #{$this}__right-icon-wrap
       margin-left: auto
       margin-right: auto
-      width: 100%
-      max-width: 1443px
+      width: 100%      
       position: relative
       z-index: 1
       top: 1em
+      +xxlmin
+        max-width: $container-lg-width - ($container-padding*2)
+      +xlmin
+        max-width: $container-lg-width-xl - ($container-padding*2)
+      +lgmin
+        max-width: $container-lg-width-lg - ($container-padding*2)
+      +lg
+        top: 0
     #{$this}__right-icon
       position: absolute
       left: 100%
       z-index: 1
       top: 0
+      +lg
+        left: auto
+        right: 10px

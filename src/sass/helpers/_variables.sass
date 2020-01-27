@@ -30,7 +30,7 @@ $container-width:    1038px + ($container-padding*2)
 $container-lg-width: 1443px + ($container-padding*2)
 $container-xl-width: 1661px + ($container-padding*2)
 
-$container-width-xl:    $container-width - 340px
+$container-width-xl:    $container-width - 100px
 $container-lg-width-xl: $container-lg-width - 340px
 $container-xl-width-xl: $container-xl-width - 340px
 
@@ -43,6 +43,10 @@ $container-width-md:    $container-width-lg - 100px
 =windowHeight($offset: 0px)
   height: calc(100vh - #{$offset})
   height: calc((var(--vh, 1vh) * 100) - #{$offset})
+
+=windowMinHeight($offset: 0px)
+  min-height: calc(100vh - #{$offset})
+  min-height: calc((var(--vh, 1vh) * 100) - #{$offset})
 
 =shadow
   box-shadow: $shadow

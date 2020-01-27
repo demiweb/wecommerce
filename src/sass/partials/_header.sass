@@ -42,11 +42,12 @@
     +lg
       min-width: percentage(117 / 375)
       width: auto
+      min-height: calc(40vh + #{$header-height-lg})
       position: fixed
       z-index: 1
       top: 0
       right: 0
-      padding-top: $header-height-lg
+      padding-top: $header-height-lg + 19px
       padding-left: 10px
       padding-right: 15px
       padding-bottom: 10px
@@ -65,6 +66,9 @@
     top: 50%
     transform: translate(0, -50%)
     font-weight: 700
+    +tr(color .3s)
+    +hover
+      color: $accent
     +lg
       position: static
       transform: translate(0, 0)
@@ -96,10 +100,10 @@
       top: 5px
     &::before
       bottom: 5px
-  &--active 
-    span
-      background-color: transparent
-      &::before
-        transform: rotate(45deg) translate(-7px,-5px)
-      &::after
-        transform: rotate(-45deg) translate(-6px,4px)
+  // &--active 
+  //   span
+  //     background-color: transparent
+  //     &::before
+  //       transform: rotate(45deg) translate(-7px,-5px)
+  //     &::after
+  //       transform: rotate(-45deg) translate(-6px,4px)
