@@ -1,13 +1,67 @@
 .section
+  $this: &
   &__title
     text-align: center
     margin-bottom: 24px
+    +lg
+      margin-bottom: 15px
+    +sm
+      margin-bottom: 9px
   &__subttl
     max-width: 752px
     margin-left: auto
     margin-right: auto
     margin-bottom: 100px
+    +xl
+      margin-bottom: 80px
+    +lg
+      margin-bottom: 50px
+    +md
+      margin-bottom: 35px
+    +sm
+      margin-bottom: 24px
+  &__text
+    p
+      +notlast
+        margin-bottom: 15px
+  &__side-wrap
+    +flex(flex-start, normal, row, wrap)
+  &__side-content
+    $gutter: 39px
+    width: percentage(1108 / 1661)
+    padding-left: $gutter / 2
+  &__side-aside
+    $gutter: 39px
+    width: percentage((1661 - 1108) / 1661)
+    padding-right: $gutter / 2
+  &__aside    
+    position: sticky
+    top: $header-height
+  &__post
+    margin-bottom: 30px
+
+
 
   &--bg
     +cover
     background-color: $c-light
+  &--icon
+    min-height: 900px
+    padding-top: 80px
+    padding-bottom: 80px
+    position: relative
+    #{$this}__title
+      text-align: right
+    #{$this}__right-icon-wrap
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 1443px
+      position: relative
+      z-index: 1
+      top: 1em
+    #{$this}__right-icon
+      position: absolute
+      left: 100%
+      z-index: 1
+      top: 0

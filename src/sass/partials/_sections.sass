@@ -1,27 +1,104 @@
 .s-services
   padding-top: 115px
   padding-bottom: 159px
+  +xl
+    padding-top: 140px
+    padding-bottom: 140px
+  +lg
+    padding-top: 80px
+    padding-bottom: 80px
+  +md
+    padding-top: 60px
+    padding-bottom: 60px
+  +sm
+    padding-top: 41px
+    padding-bottom: 41px
 
 .s-form
   padding-top: 175px
   padding-bottom: 175px
+  +xl
+    padding-top: 140px
+    padding-bottom: 140px
+  +lg
+    padding-top: 80px
+    padding-bottom: 120px
+  +md
+    padding-top: 60px
+  +sm
+    padding-top: 47px
+  &__form
+    +lg
+      max-width: percentage(287 / 375)
+      margin-left: auto
+      margin-right: auto
+    +sm
+      max-width: none
+      width: 287px
+  
 
 .s-descr
   padding-top: 148px
   padding-bottom: 220px
-  position: relative
-  z-index: 2
-  margin-bottom: 186px
+  +xl
+    padding-top: 120px
+    padding-bottom: 170px
+  +lg
+    padding-top: 100px
+    // padding-bottom: 140px
+  +md
+    padding-top: 70px
+    padding-bottom: 120px
+  +sm
+    padding-top: 42px
+    padding-bottom: 60px
   &__title
     margin-bottom: 62px
+    +xl
+      margin-bottom: 50px
+    +lg
+      margin-bottom: 35px
+    +md
+      margin-bottom: 25px
+    +sm
+      margin-bottom: 16px
+
+.s-grid-items
+  position: relative
+  z-index: 2
+  padding-top: 297px
+  padding-bottom: 65px
+  +xl
+    padding-top: 250px
+    padding-bottom: 50px
+  +lg
+    padding-top: 200px
+    padding-bottom: 40px
+  +md
+    padding-top: 150px
+    padding-bottom: 30px
+  +sm
+    padding-top: 94px
+    padding-bottom: 23px
   &__img
     position: absolute
     z-index: 1
-    top: 100%
+    top: 0
     left: 50%
     transform: translate(-50%, -50%)
-  &__img-title
+    width: percentage(705 / 1920)
+    +sm
+      width: 207px
+  &__title
     +vcenter
 
+.s-form-service
+  padding-top: 60px
+  padding-bottom: 46px
+  &__form
+    margin-bottom: 99px
 
+.s-blog
+  padding-top: 130px
+  padding-bottom: 149px
   

@@ -1,0 +1,40 @@
+---
+title: amazon
+page: amazon
+hero: {
+  sm: true,
+  bg: 'hero/photo-1549194388-f61be84a6e9e.png'
+}
+sectionIcon: {
+  title: 'ניהול חנויות אמזון',
+  text: 'טקסט כלשהו',
+  icon: 'home/icon_amazon@2x.png'
+}
+services: {
+  items: [
+    {
+      img: 'home/icon2@2x.png',
+      title: 'הקמת ותחזוקת קטלוג מוצרים'
+    },
+    {
+      img: 'home/icon1@2x.png',
+      title: 'שירות לקוחות לאתרי סחר'
+    },
+    {
+      img: 'home/icon3@2x.png',
+      title: 'ניהול מערך השילוח'
+    },
+    {
+      img: 'home/icon4@2x.png',
+      title: 'Marketing Automation ו-SEO'
+    }
+  ]
+}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/_s-icon.html" %}
+  {% include "partials/_s-form-services.html" %}
+{% endblock %}

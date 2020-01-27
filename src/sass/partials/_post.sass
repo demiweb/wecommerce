@@ -1,0 +1,26 @@
+.post
+  background-color: $white
+  padding: 30px 15px 15px
+  color: $gray
+  +shadow
+  &__title
+    margin-bottom: 25px
+    color: $c-text
+  &__meta
+    margin-bottom: 15px
+  &__img
+    +cover
+    padding-top: 50%
+    margin-bottom: 100px
+    margin-left: -15px
+
+.post-meta
+  +flex
+  &__item
+    +inline-flex(flex-start, center)
+    +notlast
+      margin-left: 15px
+    .icon
+      margin-left: .5em
+      font-size: .8em
+

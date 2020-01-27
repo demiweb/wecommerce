@@ -1,6 +1,8 @@
 html
   font-size: $fz
   line-height: 1.3
+  +md
+    font-size: $fz-md-px
   +sm
     font-size: $fz-sm-px
 
@@ -26,15 +28,31 @@ body
   width: 100%
   margin-left: auto
   margin-right: auto
-  padding-left: 44px
-  padding-right: 44px
-  max-width: 1126px
+  padding-left: $container-padding
+  padding-right: $container-padding
+  +xxlmin
+    max-width: $container-width
+  +xlmin
+      max-width: $container-width-xl
+  +lgmin
+      max-width: $container-width-lg
+  +mdmin
+      max-width: $container-width-md
   &--lg
-    max-width: 1531px
+    +xxlmin
+      max-width: $container-lg-width
+    +xlmin
+      max-width: $container-lg-width-xl
+    +lgmin
+      max-width: $container-lg-width-lg
+  &--xl
+    max-width: $container-xl-width
   
   
 .out
   padding-top: $header-height
+  +lg
+    padding-top: $header-height-lg
 
 .descr
   p
