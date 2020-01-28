@@ -1,21 +1,72 @@
 .aside
   &__block
     margin-bottom: 35px
-    +shadow
+    +lgmin
+      +shadow
+    +sm
+      margin-bottom: 15px
+  &__btn
+    +lg
+      text-align: center
 
 .aside-nav
+  +lg
+    text-align: center
   &__title
     background-color: $accent-2
     color: $white
     padding: 20px 42px
     font-size: 44px
     font-weight: 700
+    +xxl
+      padding: 15px 30px
+    +lg
+      background-color: transparent
+      padding: 0
+      color: inherit
+      font-size: 36px
+      // margin-bottom: 30px
+    +md
+      font-size: 28px
+    +sm
+      font-size: 20px
+      // margin-bottom: 15px
   &__nav
     padding-left: 85px
     padding-right: 40px
     font-size: 36px
+    +xxl
+      padding-left: 65px
+      padding-right: 30px
+    +xl
+      font-size: 30px
+    +lg
+      padding-left: 0
+      padding-right: 0
+      max-width: percentage(180 / 275)
+      margin-left: auto
+      margin-right: auto
+      font-size: 26px
+      +r(374)
+        max-width: 180px
+    +md
+      font-size: 21px
+    +sm
+      font-size: 17px
     li
       padding-top: 29px
       padding-bottom: 29px
       +notlast
         border-bottom: 2px solid $gray
+      +xxl
+        padding-top: 20px
+        padding-bottom: 20px
+      +xl
+        padding-top: 18px
+        padding-bottom: 18px
+      +md
+        padding-top: 15px
+        padding-bottom: 15px
+      +sm
+        padding-top: 12px
+        padding-bottom: 12px

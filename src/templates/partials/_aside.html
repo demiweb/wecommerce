@@ -1,0 +1,30 @@
+<aside class="section__aside aside">
+  <div class="aside__block aside-nav">
+    <div class="aside-nav__title">קטגוריות</div>
+
+    {{ mixins.list(
+      name = 'nav',
+      nameAsClass = false,
+      hasWrap = true,
+      modifications = { wrap: 'aside-nav__nav', item: '', link: '' },
+      list = [
+        { link: 'כל הקטגוריות' },
+        { link: 'שיווק' },
+        { link: 'תפעול ולוגיסטיקה' },
+        { link: 'השירותים שלנו' }
+      ]
+    ) }}
+  </div>
+
+  <div class="aside__block">
+    <img class="js-lazy" src="about:bland" alt="" width="100%" data-src="./img/blog/צילום מסך 2020.01.22 ב.11.01.50.png">
+  </div>
+
+  <div class="aside__btn">
+    {{ mixins.btn(
+      title = 'צור קשר',
+      mod = 'btn--full-lg btn--lg'
+    ) }}
+  </div>
+  
+</aside>

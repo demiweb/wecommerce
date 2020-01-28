@@ -2,16 +2,16 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <div class="footer__social">
+      {# <div class="footer__social"> #}
         {{ mixins.list(
           name = 'social',
-          modifications = { wrap: '', item: '', link: '' },
+          modifications = { wrap: '', list: 'footer__social social', item: '', link: '' },
           list = [
             { link: mixins.icon('instagram') },
             { link: mixins.icon('facebook') }
           ]
         ) }}
-      </div>
+      {# </div> #}
 
       <div class="footer__text">
         03-9444901

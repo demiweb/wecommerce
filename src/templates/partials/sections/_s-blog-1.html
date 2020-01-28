@@ -1,0 +1,36 @@
+<!-- begin section -->
+<section class="section s-blog">
+  <div class="container container--xl">
+    <div class="section__side-wrap">
+      <div class="section__side-content">
+        {{ mixins.post(
+          text = '<p>תרי איקומרס פועלים בסביבה תחרותית ומאתגרת, כשהיעד הסופי ברור - למכור, וכמה שיותר! </p> <p>כדי להשיג יעד זה, יש צורך בהבנה של מסעו של הצרכן (Consumer Journey)</p><p>א מהרגע שבו הוא מתעניין במוצר מסויים, דרך השלבים שבהם הוא מתלבט, צובר מידע ומגבש החלטה, ועד לרגע שבו הוא מבצע רכישה ואף לאחר ביצוע הרכישה - ביצוע רכישות חוזרות, המלצות לחברים וכיו״ב. את מסעו של הצרכן אנו מלווים באמצעות כלים שיווקיים שונים - מנועי חיפוש, רשתות חברתיות, דיוור, תוכן, פרסום בפלטפרומות שונות ועוד. WeCommerce מתמחה בשיווק אתרי איקומרס. מחלקת השיווק שלנו מציעה ללקוחותינו את מגוון השירותים והכלים השיווקיים הדרושים להצלחת האתר, וכל זאת תוך ראייה של התמונה השיווקית המלאה ואופטימיזציה של ההוצאות השיווקיות. השירותים העיקריים אותם אנו מציעים ללקוחותינו: # קידום אורגני במנועי חיפוש עם התמחות בקידום אתרי סחר (SEO) # קידום ממומן בגוגל # פרסום ברשתות חברתיות # ניהול רשתות חברתיות # שירותי דיוור (אימייל מרקטינג) מלאים כולל עיצוב, תכנות וניהול # כתיבה וקידום תוכן במסגרת הפעילויות השיווקיות שלנו אנו בונים ומנהלים עבור לקוחותינו מאגר לקוחות (Data Base) לשימושים שונים, ומייעלים את העבודה על ידי התממשקות של מערכת האוטומציה השיווקית (Marketing Automation) עם מערכות ה-CRM וה-Call Center שלנו.</p>'
+        ) }}
+
+        <h2 class="section__title section__title--right title title--h2 hidden--sm">פוסטים שיכולים לעניין אותך:</h2>
+
+        <div class="section__posts-wrap">
+          <div class="section__controls-links mb--sm-0 section-controls order--sm-1">
+            <a href="#" class="section-controls__link">&lt; לעמוד הקודם</a>
+            <a href="#" class="section-controls__link">לעמוד הבא &gt;</a>
+          </div>
+
+          <div class="section__posts order--sm-0">
+            {% for i in range(0, 2) %}
+            {{ mixins.post(
+              mod = 'section__post--sm post--sm',
+              img = 'pexels-photo-669615-1.png'
+            ) }}
+            {% endfor %}
+          </div>
+        </div>     
+        
+      </div>
+      
+      <div class="section__side-aside">
+        {% include "partials/_aside.html" %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->

@@ -1,8 +1,17 @@
 .post
+  $this: &
+  +flex(flex-start, normal, column)
   background-color: $white
-  padding: 30px 15px 15px
-  color: $gray
+  padding: 15px 43px 0
   +shadow
+  +xl
+    padding: 15px 30px 0
+  +lg
+    padding: 15px 25px 0
+  +md
+    padding: 15px 20px 0
+  +sm
+    padding: 12px 12px 0
   &__title
     margin-bottom: 25px
     color: $c-text
@@ -10,17 +19,91 @@
     margin-bottom: 15px
   &__img
     +cover
-    padding-top: 50%
-    margin-bottom: 100px
-    margin-left: -15px
+    background-color: $gray
+    padding-top: percentage(482 / 972)
+    margin-bottom: 61px
+    +xl
+      margin-bottom: 50px
+    +lg
+      margin-bottom: 35px
+    +md
+      margin-bottom: 25px
+    +sm
+      margin-bottom: 12px
+  &__text
+    margin-bottom: 19px
+    flex-grow: 1
+  &__link
+    display: block
+    padding: 25px
+    font-weight: 700
+    font-size: 34px
+    text-align: center
+    border-top: 1px solid  $c-light
+    margin-left: -43px
+    margin-right: -43px
+    +tr(color .3s)
+    +hover
+      color: $accent
+    +xl
+      padding: 20px
+      font-size: 28px
+      margin-left: -30px
+      margin-right: -30px
+    +lg
+      margin-left: -25px
+      margin-right: -25px    
+    +md
+      padding: 17px
+      font-size: 20px
+      margin-left: -20px
+      margin-right: -20px
+    +sm
+      padding: 12px
+      font-size: 16px
+      margin-left: -12px
+      margin-right: -12px
 
-.post-meta
-  +flex
-  &__item
-    +inline-flex(flex-start, center)
-    +notlast
-      margin-left: 15px
-    .icon
-      margin-left: .5em
-      font-size: .8em
+
+  &--sm
+    padding-left: 36px
+    padding-right: 36px
+    #{$this}__link
+      margin-left: -36px
+      margin-right: -36px
+      +xl
+        margin-left: -30px
+        margin-right: -30px
+      +lg
+        margin-left: -25px
+        margin-right: -25px
+      +md
+        margin-left: -20px
+        margin-right: -20px
+      +sm
+        margin-left: -12px
+        margin-right: -12px
+    #{$this}__text
+      overflow: hidden
+      max-height: 4em
+    #{$this}__img
+      padding-top: percentage(417 / 443)
+      margin-bottom: 39px
+      +xl
+        margin-bottom: 35px
+      +lg
+        margin-bottom: 30px
+        // padding-top: percentage(130 / 287)
+      +sm
+        padding-top: percentage(130 / 287)
+
+// .post-meta
+//   +flex
+//   &__item
+//     +inline-flex(flex-start, center)
+//     +notlast
+//       margin-left: 15px
+//     .icon
+//       margin-left: .5em
+//       font-size: .8em
 

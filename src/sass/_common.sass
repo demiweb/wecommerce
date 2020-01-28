@@ -46,7 +46,14 @@ body
     +lgmin
       max-width: $container-lg-width-lg
   &--xl
-    max-width: $container-xl-width
+    +xxlmin
+      max-width: $container-xl-width
+    +xlmin
+        max-width: $container-xl-width-xl
+    +lgmin
+        max-width: $container-xl-width-lg
+    // +mdmin
+    //     max-width: $container-xl-width-md
   
   
 .out
@@ -58,4 +65,6 @@ body
   p
     +notlast
       margin-bottom: 30px
+      +lg
+        margin-bottom: 15px
   
