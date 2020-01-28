@@ -9,3 +9,7 @@ PageList:
 - file: amazon.html
 - file: blog.html
 - file: blog-1.html
+- file: home-eng.html
+- file: catalog-eng.html
+- file: blog-eng.html
+- file: blog-1-eng.html

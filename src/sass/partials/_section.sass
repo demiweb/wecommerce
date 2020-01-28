@@ -7,8 +7,10 @@
       margin-bottom: 15px
     +sm
       margin-bottom: 9px
-    &--right
+    &--side
       text-align: right
+      +not-rtl
+        text-align: left
   &__subttl
     max-width: 752px
     margin-left: auto
@@ -32,17 +34,25 @@
     $gutter: 39px
     width: percentage(1108 / 1661)
     padding-left: $gutter / 2
+    +not-rtl
+      padding-right: $gutter / 2
+      padding-left: 0
     +lg
       width: 100%
-      padding-left: 0
+      padding-left: 0 !important
+      padding-right: 0 !important
       margin-bottom: 45px
   &__side-aside
     $gutter: 39px
     width: percentage((1661 - 1108) / 1661)
     padding-right: $gutter / 2
+    +not-rtl
+      padding-right: $gutter / 2
+      padding-left: 0
     +lg
       width: 100%
-      padding-right: 0
+      padding-right: 0 !important
+      padding-left: 0 !important
   &__aside    
     position: sticky
     top: $header-height
@@ -111,10 +121,12 @@
     #{$this}__title
       padding-left: 60px
       padding-right: 60px
-      +mdmin
+      +mdmin        
         text-align: right
         padding-left: 0
         padding-right: 0
+        +not-rtl
+          text-align: left
       +md
         margin-bottom: 30px
     #{$this}__right-icon-wrap
@@ -137,9 +149,15 @@
       left: 100%
       z-index: 1
       top: 0
+      +not-rtl
+        left: auto
+        right: 100%
       +lg
         left: auto
         right: 10px
+        +not-rtl
+          left: 10px
+          right: auto
 
 .section-controls
   +flex(space-between, center)

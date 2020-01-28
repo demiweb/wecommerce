@@ -47,7 +47,7 @@
   +shadow
   height: calc(100% - 16px)
   margin-bottom: 16px
-  text-align: center
+  text-align: center  
   &__img
     margin-left: auto
     margin-right: auto
@@ -55,6 +55,8 @@
   +sm
     flex-direction: row
     padding: 9px
+    +not-rtl
+      flex-direction: row-reverse
     #{$this}__img
       margin-bottom: 0
       margin-right: 0
