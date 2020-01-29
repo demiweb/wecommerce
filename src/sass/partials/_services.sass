@@ -3,27 +3,43 @@
   $grid-gutter: 10px
 
   +flex(space-between, normal, row, wrap)
-  +xl
-    margin-left: -$grid-gutter / 2
-    margin-right: -$grid-gutter / 2
-    justify-content: center
+  +lg
+    // margin-left: -$grid-gutter / 2
+    // margin-right: -$grid-gutter / 2
+    // justify-content: center
   +sm
     display: block
   &__item
     width: 197px
     margin-bottom: 17px
     +xl
-      width: 20%
-      padding-left: $grid-gutter / 2
-      padding-right: $grid-gutter / 2
+      // width: 20%
+      // padding-left: $grid-gutter / 2
+      // padding-right: $grid-gutter / 2
     +lg
-      width: 33.33333%
+      // width: 33.33333%
+    +md
+      width: 160px
     +sm
-      width: percentage(185 / 375)
+      // width: percentage(185 / 375)
       margin-left: auto
       margin-right: auto
     +xs
-      width: 185px
+      width: 185px !important
+  &:not(#{$this}--full)
+    +lg
+      justify-content: center
+    #{$this}__item
+      +xl
+        width: 160px
+      +lg
+        width: 33.33333%
+        padding-left: $grid-gutter / 2
+        padding-right: $grid-gutter / 2
+      +md
+        width: percentage(185 / 375)
+
+      
 
   &--full
     $grid-gutter-sm: 18px
