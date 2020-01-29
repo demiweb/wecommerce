@@ -41,7 +41,6 @@
     +lg
       min-width: percentage(117 / 375)
       width: auto
-      min-height: calc(40vh + #{$header-height-lg})
       position: fixed
       z-index: 1
       top: 0
@@ -53,11 +52,16 @@
       overflow: auto
       background-color: $white
       transform: translate(100%, 0)
+      min-height: $hero-height-lg + $header-height-lg
       +shadow
       +ready
         +tr(transform .5s $easeOutQuart)
       &--open
         transform: translate(0, 0)
+    +md
+      min-height: $hero-height-md + $header-height-lg
+    +sm
+      min-height: $hero-height-sm + $header-height-lg
   &__lang
     position: absolute
     z-index: 1
@@ -80,26 +84,25 @@
 
 .burger 
   display: block
-  width: 28px
-  height: 28px
+  width: 16px
+  height: 13px
   position: relative
   span
     display: block
     &, &::after, &::before
       width: 100%
-      height: 2px
+      height: 1px
       background-color: currentColor
       backface-visibility: hidden
-      border-radius: 2px
       +tr(transform .3s)
     &::after, &::before
       content: ""
       position: absolute
       left: 0
     &::after
-      top: 5px
+      top: 0
     &::before
-      bottom: 5px
+      bottom: 0
   // &--active 
   //   span
   //     background-color: transparent

@@ -24,7 +24,7 @@
     +sm
       margin-bottom: 15px
   &__fields
-    +flex(flex-start, normal, row, wrap)
+    +flex(space-between, normal, row, wrap)
     margin-left: -10px
     margin-right: -10px
     margin-bottom: -67px + 37px
@@ -34,12 +34,14 @@
     width: 50%
     margin-bottom: 67px
     padding-left: 10px
-    padding-right: 10px
+    padding-right: 10px    
     +md
       margin-bottom: 40px
     +sm
       width: 100%
       margin-bottom: 25px
+    &:nth-child(even)
+      +flex(flex-end)
   &__btn
     margin-bottom: 22px
     +md

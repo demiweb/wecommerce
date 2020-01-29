@@ -15,8 +15,8 @@
       min-height: 73px
   &__inner
     +flex(center, normal, column)
-    padding-top: 30px
-    padding-bottom: 30px
+    // padding-top: 30px
+    // padding-bottom: 30px
     // padding-top: 300px
     // padding-bottom: 148px
     // +xl
@@ -44,8 +44,13 @@
 
   &--lg
     #{$this}__inner
-      min-height: 40vh
-      // +windowMinHeight($header-height)
-      // +lg
-      //   +windowMinHeight($header-height-lg)
+      min-height: $hero-height
+      +xl
+        min-height: $hero-height-xl
+      +lg
+        min-height: $hero-height-lg
+      +md
+        min-height: $hero-height-md
+      +sm
+        min-height: $hero-height-sm
 
