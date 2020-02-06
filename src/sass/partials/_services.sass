@@ -3,29 +3,18 @@
   $grid-gutter: 10px
 
   +flex(space-between, normal, row, wrap)
-  +lg
-    // margin-left: -$grid-gutter / 2
-    // margin-right: -$grid-gutter / 2
-    // justify-content: center
   +sm
     display: block
   &__item
     width: 197px
     margin-bottom: 17px
-    +xl
-      // width: 20%
-      // padding-left: $grid-gutter / 2
-      // padding-right: $grid-gutter / 2
-    +lg
-      // width: 33.33333%
     +md
       width: 160px
     +sm
-      // width: percentage(185 / 375)
       margin-left: auto
       margin-right: auto
-    +xs
-      width: 185px !important
+    +xxs
+      max-width: 185px 
   &:not(#{$this}--full)
     +lg
       justify-content: center
@@ -70,6 +59,7 @@
     margin-bottom: 20px
   +sm
     flex-direction: row
+    text-align: inherit
     padding: 9px
     +not-rtl
       flex-direction: row-reverse
