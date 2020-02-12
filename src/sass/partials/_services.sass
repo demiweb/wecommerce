@@ -3,10 +3,14 @@
   $grid-gutter: 10px
 
   +flex(space-between, normal, row, wrap)
+  max-width: 1180px
+  margin-left: auto
+  margin-right: auto
   +sm
     display: block
   &__item
-    width: 197px
+    font-size: em(24)
+    width: 176px
     margin-bottom: 17px
     +md
       width: 160px
@@ -72,7 +76,7 @@
 
 .service-img
   $this: &
-  width: 97px
+  width: 79px
   padding-bottom: 50px
   border-bottom: 2px solid  $blue
   +sm
