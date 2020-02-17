@@ -1,5 +1,8 @@
 .section
   $this: &
+  $side-gutter: 61
+  $aside-width: percentage((1626 - 1051 - ($side-gutter / 2)) / 1626)
+  $content-width: percentage((1051 + ($side-gutter / 2)) / 1626)
   &__title
     margin-bottom: 24px
     +lg
@@ -36,11 +39,11 @@
   &__side-wrap
     +flex(flex-start, normal, row, wrap)
   &__side-content
-    $gutter: 39px
-    width: percentage(1108 / 1661)
-    padding-left: $gutter / 2
+    // width: percentage(1051 / 1626)
+    width: $content-width
+    padding-left: $side-gutter / 2 + px
     +not-rtl
-      padding-right: $gutter / 2
+      padding-right: $side-gutter / 2 + px
       padding-left: 0
     +lg
       width: 100%
@@ -48,11 +51,11 @@
       padding-right: 0 !important
       margin-bottom: 45px
   &__side-aside
-    $gutter: 39px
-    width: percentage((1661 - 1108) / 1661)
-    padding-right: $gutter / 2
+    // width: percentage((1626 - 1051) / 1626)
+    width: $aside-width
+    padding-right: $side-gutter / 2 + px
     +not-rtl
-      padding-right: $gutter / 2
+      padding-right: $side-gutter / 2 + px
       padding-left: 0
     +lg
       width: 100%
